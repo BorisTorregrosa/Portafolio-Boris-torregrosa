@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family:OCR A Std, monospace;
+    background-image:url(imagenes/fondobody.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100vw;
+    height: 12vh;
+    background-color: #3282F6;
+}
+img{
+    width: 25vw;
+    height: 11.5vh;
+    border-radius: 20px;
+}
+.navegacion{
+    display: flex;
+    gap: 40px;
+    width:100vw ;
+    height:12vh;
+    align-items: center;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.url{
+    display: flex;
+    width:35vw ;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    gap: 10px;
+}
+.letra{  /*la cree para poder modificar el color de las letras con java script*/
+    color: #ffffff;
+}
+.navegacion a{
+    text-decoration: none;
+    font-size:20px;
+    color: #ffffff;
+}
+.navegacion a:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.botonC{
+    text-align: center;
+    width:3vw;
+    height:6vh;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.botonC img{
+    width: 2vw;
+    height: 5vh;
+}
+.botonC:hover{
+    background-color:  #0099ff;
+    
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+    background-color: #024751;
+    background-image: url(https://wallpapers.com/images/hd/720p-minecraft-background-drvhp3iqh4xe2tei.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.parent-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1-main {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    grid-row-start: 15;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Minecraft', sans-serif;
+    color: rgb(17, 17, 17);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 8px;
+
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 5px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #eeecec;
+    margin-bottom:30px ;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 5px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #eeecec;
+    margin-bottom:30px ;
+}
+
+.div3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 8;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 5px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #eeecec;
+    margin-bottom:30px ;
+}
+.div1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.div2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.div3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.titulo{
+    font-family: 'Minecraft', sans-serif;
+}
+
+footer{
+    width: 100vw;
+    height:20vh;
+    display: block;
+    align-items: baseline;
+    justify-items: center;
+}
+footer img{
+    width:3vw;
+    height:8vh;
+    border: 3px solid #000000;
+    border-radius: 50px;
+}
+footer img:hover{
+    background-color: #00a7f5;
+    transition: 0.5s;
+}
+
+.label_icono{
+    display:none;
+}
+
+.icono{
+    
+    position: absolute;
+    left: 90%;
+    top: 4%;
+}
+#menu{
+    display: none;
+}
+.menu:checked + .url{
+    height: calc(100vh - 80px);
+}
+#menu_burger:checked + { /*lo hice porque se me mostraba el titulo por encima*/
+    display: none;
+}
+
+@media(width <= 968px){
+    main{
+        width: 100vw;
+        height: 40vh;
+        background-color: #024751;
+        background-image: url(https://wallpapers.com/images/hd/720p-minecraft-background-drvhp3iqh4xe2tei.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .parent-main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+    }
+        
+    .div1-main {
+        grid-column: span 5 / span 5;
+        grid-row: span 3 / span 3;
+        grid-row-start: 10;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Minecraft', sans-serif;
+        color: rgb(17, 17, 17);
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 8px;
+        padding: 20px 0px 0px 0px;
+    }
+        
+    .div1 {
+        grid-column: span 3 / span 3;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        border: 5px solid;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 20px;
+        text-align: center;
+        background-color: #eeecec;
+    }
+    
+    .div2{
+        grid-column: span 3 / span 3;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        border: 5px solid;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 20px;
+        text-align: center;
+        background-color: #eeecec;
+    }
+    .div3 {
+        grid-column: span 3 / span 3;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 5;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        border: 5px solid;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 20px;
+        text-align: center;
+        background-color: #eeecec;
+    }
+    img{
+        width: 70vw;
+        height: 11.5vh;
+    }
+    footer{
+        width: 100vw;
+        height:10vh;
+        display: block;
+        align-items: baseline;
+        justify-items: center;
+        margin-top: 50px;
+    }
+    footer img{
+        width:8vw;
+        height:4vh;
+        border: 3px solid #000000;
+        border-radius: 50px;
+    }
+    footer img:hover{
+        background-color: #00a7f5;
+        transition: 0.5s;
+    }
+
+    .label_icono{
+        display:block;
+    }
+    .url{
+        position: absolute;
+        width: 100vw;
+        height:0px;
+        flex-direction: column;
+        gap: 2rem;
+        background-color:#3282F6B3;
+        top: 80px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        /* height: calc(100vh - var(--altura_menu)); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+    }
+    .url a{ /*aqui se quita el subrayado del texto y se cambia de color*/
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 3em ;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .url a:hover{
+        color: #797878;
+        background-color: rgba(209, 209, 209, 0.281);
+        transition-duration: .3s;
+    }
+    .botonC{
+        width:25vw;
+        height:10vh;
+    }
+    .botonC img{
+        width:12vw;
+        height:6vh;
+    }
+}

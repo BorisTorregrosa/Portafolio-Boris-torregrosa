@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    </style>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <label for="menu" class="label_icono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" 
+                    fill="currentColor" class="icono" viewBox="0 0 16 16">
+                    <path d="M1 4h12M1 8h12M1 12h12" stroke="white" stroke-width="2"/>
+                </svg>
+
+            </label>
+            <div class="navegacion">
+                <a href="index.html"><img src="imagenes/ICONO2.gif" alt=""></a>
+                <input type="checkbox" name="" id="menu" class="menu">
+                <div class="url">
+                    <a class="letra" href="index.html">Inicio</a>
+                    <a class="letra" href="proyectos.html">Proyectos</a>
+                    <a class="letra" href="contacto.html">Contactos</a>
+                    <button class="botonC" id="paleta">
+                    <img src="imagenes/paleta-de-color.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo"><h1>Formulario de contacto</h1></div>
+        <div class="parent">
+            <div class="div1">
+                <div class="container mt-5">
+                  <h2 class="mb-4 text-center" style="font-family: 'Minecraft', sans-serif;" >ingrese sus datos</h2>
+                
+                  <form action="https://formsubmit.co/torregrosaborisjose@gmail.com" method="POST">
+                    
+                    <!-- Campo de del nombre y apellido usuario -->
+                    <div class="row mb-3">
+                      <div class="col-md-6 mb-2">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="apellido" class="form-control" placeholder="Apellido" required>
+                      </div>
+                    </div>
+                
+                    <!-- Campo de email del usuario -->
+                    <div class="mb-3">
+                      <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+                    </div>
+
+                    
+                    
+                    <!-- Campo de genero del usuario -->
+                    <div class="mb-3">
+                      <select class="form-select" name="genero" required>
+                        <option selected disabled>Selecciona tu género</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="39 tipos de gay">39 tipos de gay</option>
+                      </select>
+                    </div>
+                
+                   <!-- Campo de mensaje del usuario -->
+                    <div class="mb-3">
+                      <textarea name="mensaje" class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                
+                   <!-- boton enviar -->
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+
+                <input type="hidden" name="_next" value="https://tupagina.com/gracias.html">
+                <input type="hidden" name="_captcha" value="false">
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <h4 class="titulo">SEGUIRME</h4>
+        <br>
+        <a href="https://www.instagram.com/b_torre2002/" target="_blank"><img src="https://img.icons8.com/?size=512&id=44907&format=png" alt=""></a>
+        <a href="https://discord.gg/4YrF2Z4X" target="_blank"><img src="https://img.icons8.com/ios7/600/FFFFFF/discord-logo.png" alt=""></a>
+        <a href="https://github.com/BorisTorregrosa" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

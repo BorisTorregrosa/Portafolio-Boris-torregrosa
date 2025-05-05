@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image:url(imagenes/fondobody.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    font-family: 'Minecraft', sans-serif;
+    width: 100vw;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100vw;
+    height: 12vh;
+    background-color: #3282F6;
+    font-family:OCR A Std, monospace;
+}
+img{
+    width: 25vw;
+    height: 11.5vh;
+    border-radius: 20px;
+}
+.navegacion{
+    display: flex;
+    gap: 40px;
+    width:100vw ;
+    height:12vh;
+    align-items: center;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.url{
+    display: flex;
+    width:35vw ;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    gap: 10px;
+}
+.letra{  /*la cree para poder modificar el color de las letras con java script*/
+    color: #ffffff;
+}
+.navegacion a{
+    text-decoration: none;
+    font-size:20px;
+    color: #ffffff;
+}
+.navegacion a:hover{
+    color:#000000;
+    transition: 0.5s;
+}
+
+.botonC{
+    text-align: center;
+    width:3vw;
+    height:6vh;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.botonC img{
+    width: 2vw;
+    height: 5vh;
+}
+.botonC:hover{
+    background-color:  #0099ff;
+}
+.label_icono{
+    display:none;
+}
+
+.icono{
+    
+    position: absolute;
+    left: 90%;
+    top: 4%;
+}
+#menu{
+    display: none;
+}
+.menu:checked + .url{
+    height: calc(100vh - 80px);
+}
+#menu_burger:checked + { /*lo hice porque se me mostraba el titulo por encima*/
+    display: none;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 7px;
+
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    grid-row: span 7 / span 7;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url(imagenes/fondo-formulario.jpg);
+    background-size: cover;
+}
+
+footer{
+    width: 100vw;
+    height:20vh;
+    display: block;
+    justify-content:end;
+    justify-items:center;
+    font-family: 'Minecraft', sans-serif;
+    color: #000000;
+    margin: 0px;
+}
+footer img{
+    width:3vw;
+    height:8vh;
+    border: 3px solid #000000;
+    border-radius: 50px;
+}
+footer img:hover{
+    background-color: #00a7f5;
+    transition: 0.5s;
+}
+
+
+@media(width <= 968px){
+    body{
+        background-image: url(imagenes/fondobody.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        width: 70vw;
+        height: 11.5vh;
+    }
+
+    .label_icono{
+        display:block;
+    }
+    .url{
+        position: absolute;
+        width: 100vw;
+        height:0px;
+        flex-direction: column;
+        gap: 2rem;
+        background-color:#3282F6B3;
+        top: 80px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        /* height: calc(100vh - var(--altura_menu)); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        z-index: 1055 !important;
+    }
+    .url a{ /*aqui se quita el subrayado del texto y se cambia de color*/
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 3em ;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .url a:hover{
+        color: #797878;
+        background-color: rgba(209, 209, 209, 0.281);
+        transition-duration: .3s;
+    }
+    .botonC{
+        width:25vw;
+        height:10vh;
+    }
+    .botonC img{
+        width:12vw;
+        height:6vh;
+    }
+    footer{
+        width: 100vw;
+        height:10vh;
+        display: block;
+        align-items: baseline;
+        justify-items: center;
+        margin-bottom: 10px;
+        font-size: 1px;
+    }
+    footer img{
+        width:8vw;
+        height:4vh;
+        border: 3px solid #000000;
+        border-radius: 50px;
+    }
+    footer img:hover{
+        background-color: #00a7f5;
+        transition: 0.5s;
+    }
+}
