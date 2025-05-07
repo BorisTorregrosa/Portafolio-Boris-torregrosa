@@ -287,20 +287,21 @@ footer img:hover{
         background-color: #eeecec;
     }
     img{
-        width: 70vw;
+        width: 67vw;
         height: 11.5vh;
     }
     footer{
         width: 100vw;
-        height:10vh;
+        height:16vh;
         display: block;
-        align-items: baseline;
+        align-items: start;
         justify-items: center;
         margin-top: 50px;
+
     }
     footer img{
         width:8vw;
-        height:4vh;
+        height:7vh;
         border: 3px solid #000000;
         border-radius: 50px;
     }

@@ -160,7 +160,7 @@ footer img:hover{
     }
     footer{
         width: 100vw;
-        height:10vh;
+        height:15vh;
         display: block;
         align-items: baseline;
         justify-items: center;
@@ -169,7 +169,7 @@ footer img:hover{
     }
     footer img{
         width:8vw;
-        height:4vh;
+        height:6vh;
         border: 3px solid #000000;
         border-radius: 50px;
     }
