@@ -4,6 +4,7 @@
     margin: 0;
 }
 body{
+    transition: 0.5s;
     background-image:url(imagenes/fondobody.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body{
 header{
     width: 100vw;
     height: 12vh;
+    transition: 0.3s;
     background-color: #3282F6;
     font-family:OCR A Std, monospace;
 }
@@ -102,17 +104,18 @@ img{
 
 }
     
-.div1 {
+.div1{
     grid-column: span 4 / span 4;
     grid-row: span 7 / span 7;
     grid-column-start: 2;
     grid-row-start: 2;
-    border: 3px solid;
+    border: 3px solid #000000;
     border-radius: 20px;
     padding: 20px;
     background-image: url(imagenes/fondo-formulario.jpg);
     background-size: cover;
 }
+
 
 footer{
     width: 100vw;
@@ -120,8 +123,6 @@ footer{
     display: block;
     justify-content:end;
     justify-items:center;
-    font-family: 'Minecraft', sans-serif;
-    color: #000000;
     margin: 0px;
 }
 footer img{
@@ -134,7 +135,10 @@ footer img:hover{
     background-color: #00a7f5;
     transition: 0.5s;
 }
-
+.titulo-footer{
+    font-family: 'Minecraft', sans-serif;
+    color: #ffffff;
+}
 
 @media(width <= 968px){
     body{
@@ -199,8 +203,8 @@ footer img:hover{
         font-size: 2px;
     }
     footer img{
-        width:8vw;
-        height:7vh;
+        width:9vw;
+        height:6vh;
         border: 3px solid #000000;
         border-radius: 50px;
     }

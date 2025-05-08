@@ -5,6 +5,7 @@
 }
 body{
     font-family:OCR A Std, monospace;
+    transition: 0.5s;
     background-image:url(imagenes/fondobody.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,6 +13,7 @@ body{
 header{
     width: 100vw;
     height: 12vh;
+    transition: 0.3s;
     background-color: #3282F6;
 }
 img{
@@ -67,11 +69,12 @@ img{
     
 }
 
-main{
+.main{
     width: 100vw;
-    height: 70vh;
+    height: 75vh;
     background-color: #024751;
-    background-image: url(https://wallpapers.com/images/hd/720p-minecraft-background-drvhp3iqh4xe2tei.jpg);
+    transition: 0.5s;
+    background-image: url(imagenes/main.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -101,7 +104,7 @@ main{
 
 }
     
-.div1 {
+.div1-inicio{
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 2;
@@ -151,7 +154,7 @@ main{
     background-color: #eeecec;
     margin-bottom:30px ;
 }
-.div1:hover{
+.div1-inicio:hover{
     transform: scale(1.05);
     transition: 0.5s;
 }
@@ -167,6 +170,12 @@ main{
 .titulo{
     font-family: 'Minecraft', sans-serif;
 }
+
+.titulo-footer{
+    font-family: 'Minecraft', sans-serif;
+    color: #ffffff;
+}
+
 
 footer{
     width: 100vw;
@@ -207,7 +216,7 @@ footer img:hover{
 }
 
 @media(width <= 968px){
-    main{
+    .main{
         width: 100vw;
         height: 40vh;
         background-color: #024751;
@@ -240,7 +249,7 @@ footer img:hover{
         padding: 20px 0px 0px 0px;
     }
         
-    .div1 {
+    .div1-inicio {
         grid-column: span 3 / span 3;
         grid-row: span 2 / span 2;
         grid-column-start: 2;
